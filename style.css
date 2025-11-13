@@ -1,0 +1,24 @@
+body {
+    background-color: rgb(200, 180, 250);
+}
+
+h1 {
+    font-size:40 px;
+    color: rgb(85, 18, 160);
+}
+p {
+    font-size: 25 px;
+    color: black;
+}
+
+#page {
+    width: 80%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#about-me {
+    background-color: hsla(0, 0%, 0%, 0.2)
+}
