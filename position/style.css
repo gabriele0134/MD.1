@@ -1,0 +1,59 @@
+html {
+    font-size: 16px; /* 16px = 1rem */
+}
+#page {
+    width: 100vw;
+    height: 100dvh;
+    background-color: #f4d58d;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.shape{ 
+    aspect-ratio: 1/1;
+    background-color: hsla(212, 56%, 61%, 0.5);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    }
+
+.square-1 {
+    width: 100px;
+    background-color: hsla(0, 82%, 49%, 0.5);
+}
+
+.square-2 {
+    width: 100px;
+    background-color: hsla(99, 97%, 48%, 0.5);
+}
+
+.square-3 {
+    width: 100px;
+    background-color: hsla(190, 53%, 55%, 0.5);
+}
+
+.circle-1 {
+    width: 150px;
+    background-color: hsla(167, 72%, 60%, 0.5);
+    border-radius: 50%;
+    
+}
+
+.circle-2 {
+    width: 150px;
+    background-color: hsla(231, 57%, 59%, 0.5);
+    border-radius: 50%;
+    
+}
+
+.circle-3 {
+    width: 150px;
+    background-color: hsla(275, 80%, 50%, 0.5);
+    border-radius: 50%;
+    
+}
