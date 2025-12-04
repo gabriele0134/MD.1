@@ -3,12 +3,36 @@ html {
 }
 body {
     padding: 1rem;
+    background-color: rgb(211, 237, 155);
+    text-align: center;
+    color: white;
+    font-style: italic;
 }
+
 ul{
     margin: 0;
     padding: 0;
     list-style-type: none;
 }
+
 li {
     font-size: 1.5rem;
+}
+/*link a riposo*/
+a, a:link { 
+    color: green;
+
+}
+/*cursore sul link*/
+a:hover {
+    color: lightgreen;
+    box-sizing: border-box;
+}
+/*link già visitati*/
+a:visited, a:focus {
+    color: rgb(100, 0, 0);
+}
+/*link premuti*/
+a:active {
+    color: yellow;
 }
