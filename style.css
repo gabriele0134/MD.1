@@ -17,22 +17,20 @@ ul{
 
 li {
     font-size: 1.5rem;
+    box-sizing: border-box;
+    border: 2px solid white;
 }
 /*link a riposo*/
 a, a:link { 
     color: green;
-
 }
-/*cursore sul link*/
-a:hover {
-    color: lightgreen;
-    box-sizing: border-box;
-}
-/*link già visitati*/
-a:visited, a:focus {
+a:visited {
     color: rgb(100, 0, 0);
 }
-/*link premuti*/
+a:hover, a:focus {
+    color: rgb(66, 38, 205);
+}
+
 a:active {
     color: yellow;
 }
