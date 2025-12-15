@@ -1,0 +1,90 @@
+html {
+    font-size: 16px; /* 16px = 1rem */
+}
+#page {
+    width: 100vw;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    overflow: hidden; 
+}
+
+body {
+    background-color:rgb(31, 112, 44);
+    margin: 0;
+    
+}
+
+.back-blue{
+    width: 80%;
+    height: 90%;
+    background-color: #bc800f; 
+    position: absolute; 
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    z-index: 2; 
+}
+.coppa {
+    position: absolute;
+    width: 630px; 
+    height: fit-content; 
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5; 
+}
+.italia {
+    position: absolute;
+    width: 161px; 
+    height: 250px;
+    top: 100px;
+    left: 33px; 
+    z-index: 4; 
+    
+}
+.spagna {
+    position: absolute;
+    width: 180px; 
+    height: 180px;
+    top: 105px; 
+    right: 15px;
+    z-index: 4;  
+}
+.argentina {
+    position: absolute;
+    width: 185px; 
+    height: 274px;
+    bottom: 80px; 
+    left: 15px;
+    z-index: 4;
+}
+
+.francia {
+    position: absolute;
+    width: 156px;
+    height: 173px;
+    bottom: 179px; 
+    right: 27px;
+    z-index: 4;
+    overflow: hidden; 
+}
+.titolo{
+    position: absolute;
+    top: -1px;
+    width: 291px;
+    height: 62px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10; 
+    color: white; 
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Futura', 'Arial Narrow', sans-serif;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
