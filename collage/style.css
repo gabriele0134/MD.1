@@ -69,7 +69,6 @@ body {
     bottom: 179px; 
     right: 27px;
     z-index: 4;
-    overflow: hidden; 
 }
 .titolo{
     position: absolute;
@@ -124,7 +123,6 @@ body {
         height: fit-content; 
         top: 50%; 
         left: 50%;
-        transform: translate(-50%, -50%);
         z-index: 5; 
     }
     .italia {
