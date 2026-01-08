@@ -86,7 +86,45 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: color 2s ease-out; text-shadow: 1,5s ease-out;
+    text-shadow:
+    0 0 5px tomato,
+    0 0 10px tomato,
+    0 0 24px tomato,
+    0 0 48px tomato,
+    0 0 84px tomato;
+
 }
+
+.titolo:hover .titolo__inner {
+    animation: poolMove 3s ease-in-out infinite;
+    color: whitesmoke;
+    text-shadow:
+    0 0 5px tomato,
+    0 0 10px tomato,
+    0 0 24px tomato,
+    0 0 48px tomato,
+    0 0 84px tomato;
+
+}
+@keyframes poolMove {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(40px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(-40px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 
 /* // Large devices (desktops, 992px and up) */
 
