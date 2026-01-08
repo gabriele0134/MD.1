@@ -48,7 +48,7 @@ body {
 
 @keyframes fluttua {
     0%, 100% { transform: translate(-50%, -50%); }
-    50% { transform: translate(-50%, -55%); } /* Si alza leggermente */
+    50% { transform: translate(-50%, -55%); } 
 }
 
 
