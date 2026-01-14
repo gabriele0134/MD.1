@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>gabriele esposito</title>
+        <link rel="stylesheet" href="../vendor/reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../vendor/AOS.js">
+        <link rel="stylesheet" href="../vendor/aos.css">
+    </head>
+<body>
+    <header>
+        <h1>Dimostrazione Animazioni AOS</h1>
+        <p>Scorri verso il basso per vedere gli effetti</p>
+    </header>
+
+    <div class="container">
+        
+        <div class="box box-rossa" data-aos="fade-up">
+            Effetto Fade Up
+        </div>
+
+        <div class="box box-verde" data-aos="flip-left" data-aos-duration="1500">
+            Effetto Flip Left
+        </div>
+
+        <div class="box box-blu" data-aos="zoom-in">
+            Effetto Zoom In
+        </div>
+
+    </div>
+
+    <script src="aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+</html>
