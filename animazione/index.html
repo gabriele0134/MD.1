@@ -55,36 +55,76 @@
                 distance: '100px',  
                 duration: 1500,     
                 easing: 'cubic-bezier(0.5, 0, 0, 1)', 
-                reset: true     
+                reset: true, 
+                origin: 'bottom',   
             };
 
         
-            ScrollReveal().reveal('.anim-basso', { 
-                ...settingGenerali, 
-                origin: 'bottom',
-                distance: '200px'   
-            });
+            ScrollReveal().reveal('.anim-basso', settingGenerali);
 
-        
-            ScrollReveal().reveal('.anim-destra', { 
-                ...settingGenerali,
+            var settingGenerali = {
+                distance: '100px',  
+                duration: 1500,     
+                easing: 'cubic-bezier(0.5, 0, 0, 1)', 
+                reset: true, 
+                origin: 'right',   
+            };
+            
+            ScrollReveal().reveal('.anim-destra', settingGenerali);
+
+
+            var settingGenerali = {
+                distance: '100px',  
+                duration: 1500,     
+                easing: 'cubic-bezier(0.5, 0, 0, 1)', 
+                reset: true, 
                 origin: 'right',
-                rotate: { z: 40 }   
-            });
-
-
-            ScrollReveal().reveal('.anim-zoom', { 
-                ...settingGenerali,
                 scale: 0.1,        
-                distance: '0px'    
-            });
-            ScrollReveal().reveal('.anim-3d', { 
-                duration: 2000,   
-                distance: '100px',
-                origin: 'right',  
-                rotate: { x: 50, z: 50 }, 
-                reset: true       
-            });
+                distance: '0px',
+                scale: 0.1,       
+            };
+
+             
+            ScrollReveal().reveal('.anim-zoom', settingGenerali);
+
+
+            var settingGenerali = {
+                distance: '100px',  
+                duration: 2000,     
+                easing: 'cubic-bezier(0.5, 0, 0, 1)', 
+                reset: true, 
+                origin: 'right', 
+                rotate: { x: 50, z: 50 },  
+            };
+
+              ScrollReveal().reveal('.anim-3d', settingGenerali);
+
+
+
+            
+            
+            
+            
+            
+            // ScrollReveal().reveal('.anim-destra', { 
+            //     settingGenerali,
+            //     origin: 'right',
+            //     rotate: { z: 40 }   
+            // });
+
+
+            // ScrollReveal().reveal('.anim-zoom', { 
+            //     settingGenerali,
+            //     scale: 0.1,        
+            //     distance: '0px'    
+            // });
+            // ScrollReveal().reveal('.anim-3d', { 
+            //     duration: 2000,   
+            //     distance: '100px',
+            //     origin: 'right',  
+            //     rotate: { x: 50, z: 50 }, 
+            //     reset: true       
+            // });
             </script>
     </body>
 </html>
