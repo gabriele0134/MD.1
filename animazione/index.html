@@ -6,36 +6,85 @@
         <title>gabriele esposito</title>
         <link rel="stylesheet" href="../vendor/reset.css">
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="../vendor/AOS.js">
-        <link rel="stylesheet" href="../vendor/aos.css">
+        <link rel="stylesheet" href="../vendor/scrollreveal.js">
+        
     </head>
 <body>
+
     <header>
-        <h1>Dimostrazione Animazioni AOS</h1>
-        <p>Scorri verso il basso per vedere gli effetti</p>
+        <h1>scrollreveal</h1>
+        <p>Scorri in basso per vedere le animazioni</p>
     </header>
 
     <div class="container">
-        
-        <div class="box box-rossa" data-aos="fade-up">
-            Effetto Fade Up
-        </div>
-
-        <div class="box box-verde" data-aos="flip-left" data-aos-duration="1500">
-            Effetto Flip Left
-        </div>
-
-        <div class="box box-blu" data-aos="zoom-in">
-            Effetto Zoom In
-        </div>
-
+    
+    <div class="box box-rossa anim-basso">
+        <div class="icon-bg"><i class="fa-solid fa-laptop-code icona-grande"></i></div>
+        <h3>Design & UX</h3>
+        <p>Progettiamo interfacce intuitive che guidano l'utente verso l'acquisto.</p>
+        <a href="#" class="btn-box">Scopri il servizio</a>
     </div>
 
-    <script src="aos.js"></script>
+    <div class="box box-verde anim-destra">
+        <div class="icon-bg"><i class="fa-solid fa-code icona-grande"></i></div>
+        <h3>Sviluppo Custom</h3>
+        <p>Soluzioni software su misura per automatizzare il tuo business.</p>
+        <a href="#" class="btn-box">Dettagli tecnici</a>
+    </div>
 
-    <script>
-        AOS.init();
-    </script>
+    <div class="box box-blu anim-zoom">
+        <div class="icon-bg"><i class="fa-solid fa-chart-line icona-grande"></i></div>
+        <h3>SEO & Growth</h3>
+        <p>Strategie data-driven per scalare la tua presenza sui motori di ricerca.</p>
+        <a href="#" class="btn-box">Analizza sito</a>
+    </div>
 
-</body>
+    <div class="box box-gialla anim-3d">
+        <div class="icon-bg"><i class="fa-solid fa-gem icona-grande"></i></div>
+        <h3>Brand Identity</h3>
+        <p>Costruiamo un'immagine coordinata forte e riconoscibile sul mercato.</p>
+        <a href="#" class="btn-box">Vedi portfolio</a>
+    </div>
+
+    </div>
+        <script src="../vendor/scrollreveal.js"></script>
+
+            <script>
+            
+            var settingGenerali = {
+                distance: '100px',  
+                duration: 1500,     
+                easing: 'cubic-bezier(0.5, 0, 0, 1)', 
+                reset: true     
+            };
+
+        
+            ScrollReveal().reveal('.anim-basso', { 
+                ...settingGenerali, 
+                origin: 'bottom',
+                distance: '200px'   
+            });
+
+        
+            ScrollReveal().reveal('.anim-destra', { 
+                ...settingGenerali,
+                origin: 'right',
+                rotate: { z: 40 }   
+            });
+
+
+            ScrollReveal().reveal('.anim-zoom', { 
+                ...settingGenerali,
+                scale: 0.1,        
+                distance: '0px'    
+            });
+            ScrollReveal().reveal('.anim-3d', { 
+            duration: 2000,   // Lento (2 secondi)
+            distance: '100px',
+            origin: 'right',  // Arriva da destra
+            rotate: { x: 50, z: 50 }, // <--- QUESTA è la rotazione 3D!
+            reset: true       // Se torni su, lo rifà
+            });
+            </script>
+    </body>
 </html>
