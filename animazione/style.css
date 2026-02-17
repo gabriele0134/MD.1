@@ -3,6 +3,7 @@ html {
     /* 16px = 1rem */
 }
 
+
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -125,4 +126,23 @@ header p {
 
 .box-gialla { 
     background: linear-gradient(135deg, #654ea3, #eaafc8); 
+}
+
+
+
+/* // Small devices (landscape phones, 576px and up) */
+
+.box {
+    width: 250px;
+    min-height: 250px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: center;
+    text-align: center;
+    padding: 33px 5px; 
+ 
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
 }
