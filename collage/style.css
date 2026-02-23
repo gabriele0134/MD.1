@@ -181,8 +181,7 @@ body {
     }
     .italia {
         position: absolute;
-        width: 253px; 
-        height: 350px;
+        width: 300px; 
         top: 38px;
         left: 455px; 
         z-index: 4; 
@@ -198,10 +197,9 @@ body {
     }
     .argentina {
         position: absolute;
-        width: 280px; 
-        height: 274px;
-        bottom: 75px; 
-        left: 455px;
+        width: 320px;
+        bottom: 112px; 
+        left: 438px;
         z-index: 4;
     }
 
