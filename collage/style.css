@@ -112,7 +112,7 @@ body {
 
 }
 
-.titolo:hover .titolo__inner {
+.titolo:hover .titolo__vittoria {
     animation: poolMove 3s ease-in-out infinite;
     color: whitesmoke;
     text-shadow:
